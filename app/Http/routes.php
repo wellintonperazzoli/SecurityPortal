@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+Route::get('/', 'SiteController@index')->name('index');
+Route::get('/login', 'AdminController@login')->name('login');
+Route::get('/admin', 'AdminController@index')->name('login');
 /*
 |--------------------------------------------------------------------------
 | Application Routes
